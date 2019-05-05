@@ -18,7 +18,7 @@ model = keras.Sequential([                    #CREATE THE NETWORK STRUCTURE (28*
     keras.layers.Flatten(input_shape=(28,28)),                  #FLATTEN MAKES ROW DATA FROM İNPUT          
     keras.layers.Dense(128,activation=tf.nn.tanh),              #CREATES THE FİRST LAYER THAT HAS 128 NEURON AND TANH ACT. FUNCTİON     
     keras.layers.Dense(128,activation=tf.nn.tanh),              #CREATES THE SECOND LAYER THAT HAS 128 NEURON AND TANH ACT. FUNCTİON
-    keras.layers.Dense(10,activation=tf.nn.softmax)             #CREATES THE LAST LAYER THAT HAS SOFTMAX FUNCTİON TO CALCULATE PROBABİLY DİSTRUBİTİON
+    keras.layers.Dense(10,activation=tf.nn.softmax)             #CREATES THE OUTPUT LAYER THAT HAS SOFTMAX FUNCTİON TO CALCULATE PROBABİLY DİSTRUBİTİON
 
 ])
 
